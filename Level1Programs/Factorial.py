@@ -1,11 +1,9 @@
 n = int(input("Enter the number : "))
 
-def fact(val):
-    x = val
-    for i in range(1,n):
-        x = x * (val-1)
-        val-=1
+def fact(n):
+    x = 1
+    for i in range(1,n+1):
+        x = x * i
     return x
 
-factorial = fact(n)
-print(factorial)
+print(fact(n))
